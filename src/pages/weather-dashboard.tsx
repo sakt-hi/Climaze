@@ -12,7 +12,6 @@ import {
   useReverseGeocodeQuery,
   useWeatherQuery,
 } from "@/hooks/useWeather";
-import { log } from "console";
 import { AlertCircle, MapPin, RefreshCw } from "lucide-react";
 
 const WeatherDashboard = () => {

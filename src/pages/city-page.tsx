@@ -3,11 +3,10 @@ import { FavoriteButton } from "@/components/favorite-button";
 import HourlyTemperature from "@/components/hourly-temperature";
 import WeatherSkeleton from "@/components/loading-skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Button } from "@/components/ui/button";
 import WeatherDetails from "@/components/weather-details";
 import WeatherForecast from "@/components/weather-forecast";
 import { useForecastQuery, useWeatherQuery } from "@/hooks/useWeather";
-import { AlertCircle, RefreshCw } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 import { useParams, useSearchParams } from "react-router-dom";
 
 const CityPage = () => {
