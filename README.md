@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# 🌤️ Climaze
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Climaze is a modern weather application built using **Vite + React + TypeScript**. It provides real-time weather updates using the **OpenWeatherMap API**, supports searching for cities, marking favorites, and displays detailed weather insights including humidity, wind speed, pressure, sunrise, and sunset times. The app supports **dark and light themes** with **shadcn/ui** and manages API calls efficiently with **React TanStack Query**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌍 **Current Location Weather** – Fetches real-time weather based on your current location.
+- 🔍 **Search Cities** – Look up weather details of any city worldwide.
+- ⭐ **Favorite Cities** – Save cities to your favorites for quick access.
+- 🌡️ **Weather Details** – Includes temperature, "Feels Like," humidity, wind speed, pressure, wind direction, sunrise, and sunset times.
+- 📅 **Weekly Forecast** – 7-day weather forecast.
+- 🎨 **Dark & Light Theme** – User-friendly UI with Shadcn.
+- ⚡ **Optimized API Calls** – Utilizes React TanStack Query for efficient data fetching and caching.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** Vite + React + TypeScript
+- **State Management & API Calls:** React TanStack Query
+- **UI Components:** Shadcn/UI
+- **Weather Data Provider:** OpenWeatherMap API
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> (Add screenshots of your app in light and dark modes)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔧 Installation & Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/your-username/climaze.git
+   cd climaze
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Create a `.env` file** and add your OpenWeatherMap API key
+   ```env
+   VITE_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+
+4. **Run the app**
+   ```sh
+   npm run dev
+   ```
+
+## 🌐 API Usage
+
+- OpenWeatherMap API is used to fetch real-time weather data.
+- Ensure you have an API key from [OpenWeatherMap](https://openweathermap.org/).
+
+## 🤝 Contributing
+
+Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+🚀 Built with ❤️ by [Sakthivel G](https://github.com/sakt-hi)
